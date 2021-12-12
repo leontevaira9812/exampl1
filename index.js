@@ -44,6 +44,11 @@ Router
     req.pipe(boy);
 
   });
+
+Router
+  .route('/login')
+  .get(r => r.res.send("leontevaira98"));
+
 app
   .use('/', Router)
   .use(({ res: r }) => r.status(404).send('Пока нет!'))
