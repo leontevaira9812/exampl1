@@ -15,8 +15,8 @@ const CORS = {
 const { log } = console;
 const app = x();
 Router
-  .route('/')
-  .get(r => r.res.end('Привет мир!'))
+  .route('/decypher')
+  .get(r => r.res.end('privet!'))
   .post(async (req, res) => {
     console.log(req.headers);
     let o = {key: '', secret: []};
